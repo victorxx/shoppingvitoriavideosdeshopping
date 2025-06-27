@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- Documento HTML5 -->
+<html lang="pt-BR">
+<!-- Idioma definido como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Suporte a caracteres especiais como acentos -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Responsividade: ajusta layout para celulares, tablets e desktops -->
+
+  <title>Notícias do Shopping Praia da Costa | Vídeos e Promoções</title>
+  <!-- Título exibido na aba do navegador -->
+
+  <meta name="description" content="Últimas notícias e vídeos do Shopping Praia da Costa em Vila Velha, Espírito Santo. Confira eventos, promoções e muito mais." />
+  <!-- Descrição usada em mecanismos de busca (SEO) -->
+
+  <meta name="keywords" content="Shopping Praia da Costa, vídeos, Vila Velha, Espírito Santo, promoções, eventos" />
+  <!-- Palavras-chave para buscadores (menos usadas hoje) -->
+
+  <meta name="author" content="Equipe Praia da Costa" />
+  <!-- Autor da página -->
+
+  <link rel="canonical" href="https://www.seusite.com/noticias-shopping-praia-da-costa" />
+  <!-- URL principal da página (evita duplicidade no SEO) -->
+
+  <style>
+    /* RESET BÁSICO E AJUSTES DE LAYOUT */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* CONTAINER DO BOTÃO PULSANTE */
+    .container {
+      flex: 0 0 auto;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #003366; /* Azul escuro */
+    }
+
+    /* BOTÃO PULSANTE COM EFEITO PISCANTE */
+    .banner-flash {
+      background-color: #ff00ff; /* Rosa neon */
+      color: white;
+      padding: 1rem 3rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 12px;
+      text-align: center;
+      animation: flash 1.5s infinite;
+      box-shadow: 0 0 15px #ff00faa0;
+      cursor: pointer;
+      user-select: none;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .banner-flash:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #ff00ffcc;
+    }
+
+    @keyframes flash {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    /* SEÇÃO DE VÍDEOS */
+    section.videos {
+      flex: 1 0 auto;
+      max-width: 900px;
+      width: 100%;
+      padding: 2rem 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 2rem auto;
+    }
+
+    section.videos h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* GRADE FLEXÍVEL PARA VÍDEOS */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .video-grid iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* AUMENTO DE ALTURA PARA TELAS MAIORES */
+    @media (min-width: 600px) {
+      .video-grid iframe {
+        height: 200px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .video-grid iframe {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- BOTÃO PULSANTE NO CENTRO DA TELA -->
+  <main class="container" role="main">
+    <a href="https://www.youtube.com/@gamenologia/videos" 
+       target="_blank" 
+       id="iframes"
+       rel="noopener noreferrer" 
+       class="banner-flash" 
+       aria-label="Confira as últimas notícias do Shopping Praia da Costa">
+      🛍️ Confira as últimas notícias! 🛍️
+    </a>
+  </main>
+
+  <!-- SEÇÃO DE VÍDEOS RELACIONADOS AO SHOPPING -->
+  <section class="videos" aria-label="Vídeos do Shopping Praia da Costa">
+    <h2>Vídeos Recentes</h2>
+    <div class="video-grid">
+      <!-- Vídeo 1 -->
+      <iframe 
+        src="https://www.youtube.com/embed/tPvQo-LmNRE" 
+        title="Vídeo sobre eventos no Shopping Praia da Costa" 
+        allowfullscreen>
+      </iframe>
+
+      <!-- Vídeo 2 -->
+      <iframe 
+        src="https://www.youtube.com/embed/pDdyER8D44c" 
+        title="Promoções no Shopping Praia da Costa" 
+        allowfullscreen>
+      </iframe>
+
+      <!-- Vídeo 3 -->
+      <iframe 
+        src="https://www.youtube.com/embed/A7WjNq0fK_c" 
+        title="Tour pelo Shopping Praia da Costa" 
+        allowfullscreen>
+      </iframe>
+       <iframe 
+        src="https://www.youtube.com/embed/T2zhtbwSqzE" 
+        title="Tour pelo Shopping Praia da Costa" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- SCRIPT PARA TROCAR AUTOMATICAMENTE O LINK DO BOTÃO -->
+  <script>
+    // Lista de links que serão alternados
+    const links = [
+      "https://creditopessoal.vercel.app/",
+      "https://www.youtube.com/@gamenologia/videos",
+      "https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/",
+      "https://www.espiritosanto-es.com.br/vodka/",
+      'https://www.youtube.com/watch?v=gBclanEnn88',
+      'https://pastoradeliokd.blogspot.com/'
+    ];
+
+    // Função para escolher um índice aleatório da lista
+    function escolherAleatorio(arr) {
+      return Math.floor(Math.random() * arr.length);
+    }
+
+    // Função que troca o href do botão pulsante
+    function mudarLink() {
+      const novoIndex = escolherAleatorio(links);
+      const novoHref = links[novoIndex];
+      document.getElementById('iframes').href = novoHref;
+    }
+
+    // Altera o link a cada 2 segundos (2000 milissegundos)
+    setInterval(mudarLink, 0.2);
+  </script>
+</body>
+</html>
